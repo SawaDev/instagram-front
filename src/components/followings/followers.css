@@ -1,0 +1,129 @@
+.followers {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(5, 4, 4, 0.5);
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  transition: .5s ease;
+  z-index: 3;
+}
+
+.followers-wrapper {
+  max-height: 240px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  background: #fff;
+  border-radius: 12px;
+  animation-timing-function: ease-out;
+  animation-duration: .1s;
+  animation-iteration-count: 1;
+}
+
+.followers-top {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  min-height: 43px;
+  width: 100%;
+  border-bottom: 1px solid rgb(219, 219, 219);
+}
+
+.followers-title{
+  color: rgb(38, 38, 38);
+  text-align: center;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 500;
+}
+
+.followers-close {
+  position: absolute;
+  right: 10px;
+  font-size: 40px;
+  cursor: pointer;
+  padding: 8px;
+}
+
+.followers-bottom {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 200px;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+
+.followers-bottom::-webkit-scrollbar {
+  display: none;
+}
+
+.followers-bottom_card {
+  display: flex;
+  flex-direction: row;
+  
+  height: 60px;
+  padding: 8px 16px;
+}
+
+.followers-bottom_card img{
+  width: 30px;
+  height: 30px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin: 4px;
+  margin-right: 13px;
+}
+
+.followers-info {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.followers-username {
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 500;
+  color: rgb(38, 38, 38);
+  transition: .5 ease;
+  overflow: hidden;
+}
+
+.followers-username:hover {
+  color: rgb(71, 71, 71);
+}
+
+.followers-name {
+  color: #8e8e8e;
+  font-size: 14px;
+  overflow: hidden;
+}
+
+.followers-button {
+  margin: 6px 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 3px 6px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #000;
+  border: 1px solid rgb(219, 219, 219);
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+@media (min-width: 736px) {
+  .followers-wrapper {
+    width: 400px;
+  }
+}

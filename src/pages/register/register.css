@@ -1,0 +1,144 @@
+.register {
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(90deg, #fb009f, #fe0202);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.register-wrapper {
+  width: 40%;
+  height: 70%;
+  display: flex;
+  background-color: #fff;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.register-wrapper_2 {
+  position: relative;
+  width: 40%;
+  height: 70%;
+  display: flex;
+  background-color: #fff;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.profile_picture {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 150px;
+  height: 150px;
+}
+
+.profile_picture img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-bottom-left-radius: 90%;
+}
+
+.logo {
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  width: 150px;
+}
+
+.register-desc {
+  font-size: 15px;
+  padding: 0 30px;
+  margin-bottom: 15px;
+}
+
+.register-box {
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%)
+}
+
+.register-input {
+  margin-bottom: 5px;
+  padding: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  border-radius: 3px;
+  background-color: #fff;
+  height: 35px;
+  font-size: 17px;
+  outline: none;
+}
+
+.register-input:focus {
+  border: 1px solid rgba(0, 0, 0, 0.8);
+}
+
+label {
+  display: flex;
+  justify-content: flex-start;
+  padding: 10px 0;
+  font-size: 20px;
+}
+
+.register-icon {
+  margin-left: 10px;
+}
+
+.buttons {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.buttons button:first-child {
+  width: 50%;
+  margin-right: 10px;
+}
+
+.buttons button:nth-child(2) {
+  width: 50%;
+}
+
+.register-btn {
+  border: 1px solid #fb009f;
+  background-color: #fff;
+  color: #fb009f;
+  padding: 5px 0;
+  margin-top: 5px;
+  border-radius: 10px;
+  text-transform: capitalize;
+  outline: none;
+  cursor: pointer;
+}
+
+.register-btn_2 {
+  background-color: #fb009f;
+  color: #fff;
+  padding: 5px 0;
+  margin-top: 5px;
+  border-radius: 10px;
+  text-transform: capitalize;
+  outline: none;
+  cursor: pointer;
+}
+
+.register-btn:active,
+.register-btn_register:active {
+  transform: scale(0.97);
+}
+
+.register-forget {
+  font-size: 12px;
+  color: rgb(128, 125, 125);
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 10px;
+}

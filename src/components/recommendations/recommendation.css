@@ -1,0 +1,114 @@
+.right {
+  padding: 20px;
+}
+
+.profile-card {
+  width: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.recommendation-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.profile-card .profile-pic {
+  flex: 0 0 auto;
+  padding: 0;
+  background: none;
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.profile-card:first-child .profile-pic {
+  width: 70px;
+  height: 70px;
+}
+
+.profile-card .profile-pic img {
+  border: none;
+}
+
+.profile-card .username {
+  display: flex;
+  justify-content: flex-start;
+  font-weight: 500;
+  font-size: 14px;
+  color: #000;
+  cursor: pointer;
+}
+
+.profile-card .username a{
+  color: #000;
+  text-decoration: none;
+}
+
+.profile-card .username a:hover {
+  color: rgb(56, 55, 55);
+}
+
+.sub-text {
+  display: flex;
+  justify-content: flex-start;
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 12px;
+  font-weight: 500;
+  margin-top: 5px;
+}
+
+.action-btn {
+  opacity: 1;
+  font-weight: 700;
+  font-size: 12px;
+}
+
+.action-btn a {
+  color: rgb(0, 162, 255);
+}
+
+.suggestion-text {
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.5);
+  font-weight: 700;
+  margin: 20px 0;
+}
+
+@media (max-width: 1100px) {
+
+  .right,
+  .search-box {
+    display: none;
+  }
+
+  .navbar-wrapper,
+  .wrapper {
+    width: 90%;
+  }
+
+  .wrapper {
+    display: block;
+  }
+}
+
+@media (max-width: 500px) {
+  .nav-items .nav-icon {
+    margin: 0 5px;
+  }
+
+  .post-image {
+    height: 300px;
+  }
+
+  .home {
+    padding-top: 0;
+  }
+  
+  .comment-wrapper {
+    display: none;
+  }
+}

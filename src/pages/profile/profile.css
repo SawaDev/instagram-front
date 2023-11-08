@@ -1,0 +1,280 @@
+.profile {
+  display: flex;
+  flex-direction: column;
+  margin-top: 70px;
+}
+
+.profile-wrapper {
+  position: relative;
+  flex-grow: 1;
+  margin: 0 auto 30px;
+  max-width: 935px;
+}
+
+.top {
+  display: flex;
+  flex-direction: row;
+}
+
+.profile-img {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+}
+
+.img-wrapper {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.img-wrapper img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+.profile-details {
+  display: flex;
+  flex: 3;
+  flex-direction: column;
+}
+
+.profile-current_user-settings {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+}
+
+.profile-current_user-settings p {
+  font-size: 32px;
+  font-weight: 100;
+  line-height: 32px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.profile-user-settings {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+}
+
+.profile-user-settings p {
+  font-size: 32px;
+  font-weight: 100;
+  line-height: 32px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.profile-username {
+  margin-right: 20px;
+}
+
+.profile-edit {
+  display: flex;
+  justify-content: flex-start;
+  background-color: inherit;
+  padding: 5px 9px;
+  font-size: 14px;
+  outline: none;
+  border: 1px solid rgb(206, 204, 204);
+  border-radius: 5px;
+  width: 90px;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.profile-settings {
+  border: none;
+  font-size: 24px;
+  background-color: #fafafa;
+  cursor: pointer;
+}
+
+.profile-stats {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  margin-bottom: 20px;
+}
+
+.profile-stats li {
+  font-size: 16px;
+  margin-right: 40px;
+  cursor: pointer;
+}
+
+.profile-stat-count {
+  font-weight: 500;
+}
+
+.profile-real-name {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.profile-desc {
+  font-size: 16px;
+  font-weight: 100;
+}
+
+.profile-filter {
+  align-items: center;
+  border-top: 1px solid rgb(219, 219, 219);
+  color: #8e8e8e;
+  display: flex;
+  flex-direction: row;
+  font-size: 12px;
+  font-weight: 600;
+  justify-content: center;
+  letter-spacing: 1px;
+  text-align: center;
+  vertical-align: baseline;
+}
+
+.profile-filter a {
+  text-decoration: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  cursor: pointer;
+  color: #8e8e8e;
+  font-size: 15px;
+  font-weight: normal;
+  height: 52px;
+}
+
+.profile-filter a.active {
+  border-top: 1px solid rgb(44, 42, 42);
+  color: rgb(38, 38, 38);
+}
+
+.filter-icon {
+  margin-right: 6px;
+}
+
+.gallery {
+  position: relative;
+  display: grid;
+  grid-template-columns: minmax(150px, 293px) minmax(150px, 293px) minmax(150px, 293px);
+  grid-gap: 28px;
+}
+
+.grid {
+  cursor: pointer;
+  width: auto;
+  height: 100%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.grid-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  background-color: rgba(0, 0, 0, .35);
+  transition: .3s ease;
+  opacity: 0;
+  cursor: pointer;
+  height: 100%;
+  width: 100%;
+}
+
+.grid:hover .grid-content{
+  opacity: 1;
+}
+
+.grid-content span {
+  color: #fff;
+  font-size: 24px;
+}
+
+.grid-content span:first-child {
+  margin-right: 35px;
+}
+
+.gallery img {
+  max-width: 100%;
+  min-height: 293px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.log-out {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(86, 83, 83, 0.5);
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  transition: .5s ease;
+  z-index: 3;
+}
+
+.log-out_wrapper {
+  width: 30%;
+  height: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  background: #fff;
+  border-radius: 10px;
+}
+
+.log-out span{
+  font-size: 27px;
+  cursor: pointer;
+  color: rgb(232, 75, 75);
+}
+
+.log-out .back{
+  padding: 10px 0;
+  color: #000;
+}
+
+@media (min-width: 736px) {
+  .top {
+    margin-bottom: 44px;
+  }
+
+  .profile-img {
+    margin-right: 30px;
+  }
+
+  .profile-current_user-settings {
+    margin-bottom: 20px;
+  }
+
+  .profile-user-settings {
+    margin-bottom: 20px;
+  }
+
+  .profile-filter a {
+    margin-right: 60px;
+  }
+}
+
+@media(max-width:736px) {
+  .gallery{
+    grid-gap: 5px;
+  }
+  .profile-filter a{
+    margin: 0 70px;
+  }
+  .filter-icon {
+    font-size: 24px;
+  }
+  .profile-filter a span{
+    display: none;
+  }
+}
